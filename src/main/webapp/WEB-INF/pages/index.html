@@ -6,14 +6,13 @@
 </head>
 <body>
 <h1>Users list</h1>
-<table border="1">
+<table border="20">
     <tr>
         <th th:width="50">Id</th>
         <th th:width="150">Name</th>
         <th th:width="150">Surname</th>
         <th th:width="150">Phone Number </th>
-        <th th:width="150">Edit</th>
-        <th th:width="150">Delete</th>
+
     </tr>
     <tr th:each="user : ${users}">
         <td th:utext="${user.getId()}">Id</td>
